@@ -13,13 +13,12 @@ namespace Mini_Blog_Backend.Controllers
     [ApiController]
     public class PostsController : ControllerBase
     {
-        // GET: api/Posts
+        // GET: Posts
         [HttpGet]
         public IEnumerable<Post> Get()
         {
             var list = new List<Post>();
 
-            Post post = new Post();
             MySqlConnection connection = new MySqlConnection(
                 "server=" + ConnexionIDs.Server +
                 ";port=" + ConnexionIDs.Port +
@@ -49,7 +48,7 @@ namespace Mini_Blog_Backend.Controllers
             return list;
         }
 
-        // GET: api/Posts/id
+        // GET: Posts/id
         [HttpGet("{id}", Name = "Get")]
         public Post Get(int id)
         {
@@ -80,7 +79,7 @@ namespace Mini_Blog_Backend.Controllers
             return post;
         }
 
-        // POST: api/Posts
+        // POST: Posts
         [HttpPost]
         public String Post([FromBody] Post post)
         {
@@ -107,7 +106,7 @@ namespace Mini_Blog_Backend.Controllers
 
         }
 
-        // DELETE: api/ApiWithActions/5
+        // DELETE: Posts/5
         [HttpDelete("{id}")]
         public string Delete(int id)
         {
