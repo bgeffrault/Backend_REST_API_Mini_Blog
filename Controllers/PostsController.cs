@@ -19,7 +19,7 @@ namespace Mini_Blog_Backend.Controllers
         {
             var list = new List<Post>();
 
-            MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;database=mini_blog_mydb;user=Baptiste;password=batdu-35");
+            MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;database=mini_blog_mydb;user=Baptiste;password=passwork");
             connection.Open();
 
             MySqlCommand command = connection.CreateCommand();
@@ -48,7 +48,12 @@ namespace Mini_Blog_Backend.Controllers
         public Post Get(int id)
         {
             Post post = new Post();
-            MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;database=mini_blog_mydb;user=Baptiste;password=batdu-35");
+            MySqlConnection connection = new MySqlConnection(
+                "server=" + ConnexionIDs.Server +
+                ";port=" + ConnexionIDs.Port +
+                ";database=" + ConnexionIDs.Database +
+                ";user=" + ConnexionIDs.User +
+                ";password=" + ConnexionIDs.Password );
             connection.Open();
 
             MySqlCommand command = connection.CreateCommand();
@@ -73,8 +78,13 @@ namespace Mini_Blog_Backend.Controllers
         [HttpPost]
         public String Post([FromBody] Post post)
         {
-            
-            MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;database=mini_blog_mydb;user=Baptiste;password=batdu-35");
+
+            MySqlConnection connection = new MySqlConnection(
+                "server=" + ConnexionIDs.Server +
+                ";port=" + ConnexionIDs.Port +
+                ";database=" + ConnexionIDs.Database +
+                ";user=" + ConnexionIDs.User +
+                ";password=" + ConnexionIDs.Password);
             connection.Open();
 
             MySqlCommand command = connection.CreateCommand();
@@ -95,7 +105,12 @@ namespace Mini_Blog_Backend.Controllers
         [HttpDelete("{id}")]
         public string Delete(int id)
         {
-            MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;database=mini_blog_mydb;user=Baptiste;password=batdu-35");
+            MySqlConnection connection = new MySqlConnection(
+                "server=" + ConnexionIDs.Server +
+                ";port=" + ConnexionIDs.Port +
+                ";database=" + ConnexionIDs.Database +
+                ";user=" + ConnexionIDs.User +
+                ";password=" + ConnexionIDs.Password);
             connection.Open();
 
             MySqlCommand command = connection.CreateCommand();
