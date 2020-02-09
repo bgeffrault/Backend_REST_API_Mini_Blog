@@ -19,7 +19,13 @@ namespace Mini_Blog_Backend.Controllers
         {
             var list = new List<Post>();
 
-            MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;database=mini_blog_mydb;user=Baptiste;password=passwork");
+            Post post = new Post();
+            MySqlConnection connection = new MySqlConnection(
+                "server=" + ConnexionIDs.Server +
+                ";port=" + ConnexionIDs.Port +
+                ";database=" + ConnexionIDs.Database +
+                ";user=" + ConnexionIDs.User +
+                ";password=" + ConnexionIDs.Password);
             connection.Open();
 
             MySqlCommand command = connection.CreateCommand();

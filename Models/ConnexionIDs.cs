@@ -10,7 +10,7 @@ namespace Mini_Blog_Backend.Models
         //"server=localhost;port=3306;database=mini_blog_mydb;user=Baptiste;password=passwork"
         public static string User = "userId";
 
-        public static string Passwork = "password";
+        public static string Password = "password";
 
         public static string Port = "3306";
 
