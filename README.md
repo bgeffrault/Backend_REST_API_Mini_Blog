@@ -61,21 +61,21 @@ DELETE /Posts/5 <br />
 
 ## Posts model
 
-title: string;  // Post's title
-content: string;  // Post's content
-loveIts: number; //Number of likes
-created_at: string; // Date of create in string
-photo: string; //URL where to fetch a picture for the post
-photoCropped: string; //URL where to fetch a picture for carroussel
+title: string;  // Post's title <br />
+content: string;  // Post's content <br />
+loveIts: number; //Number of likes <br />
+created_at: string; // Date of create in string <br />
+photo: string; //URL where to fetch a picture for the post <br />
+photoCropped: string; //URL where to fetch a picture for carroussel <br />
 
 ## Connect with a Database
-To implement this solution, it uses a local MySQL database.
-To use your own database, you can set the parameters inside the ConnexionIDs class :
-        public static string User = "user";
-        public static string Password = "password";
-        public static string Port = "3306";
-        public static string Server = "localhost";
-        public static string Database = "mini_blog_mydb";
+To implement this solution, it uses a local MySQL database. <br />
+To use your own database, you can set the parameters inside the ConnexionIDs class : <br />
+        public static string User = "user"; <br />
+        public static string Password = "password"; <br />
+        public static string Port = "3306"; <br />
+        public static string Server = "localhost"; <br />
+        public static string Database = "mini_blog_mydb"; <br />
         
  ## Author
  Baptiste GEFFRAULT
