@@ -115,3 +115,8 @@ C:\Users\bgeff\ASP dotNet\Mini-Blog Backend\bin\Debug\netcoreapp3.1\runtimes\uni
 C:\Users\bgeff\ASP dotNet\Mini-Blog Backend\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\bgeff\ASP dotNet\Mini-Blog Backend\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\bgeff\ASP dotNet\Mini-Blog Backend\obj\Debug\netcoreapp3.1\Mini-Blog Backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bgeff\ASP dotNet\Mini-Blog Backend\bin\Debug\netcoreapp3.1\publish\web.config
+C:\Users\bgeff\ASP dotNet\Mini-Blog Backend\bin\Debug\netcoreapp3.1\publish\appsettings.Development.json
+C:\Users\bgeff\ASP dotNet\Mini-Blog Backend\bin\Debug\netcoreapp3.1\publish\appsettings.json
+C:\Users\bgeff\ASP dotNet\Mini-Blog Backend\bin\Debug\netcoreapp3.1\publish\Mini-Blog Backend.deps.json
+C:\Users\bgeff\ASP dotNet\Mini-Blog Backend\bin\Debug\netcoreapp3.1\publish\Mini-Blog Backend.runtimeconfig.json
